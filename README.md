@@ -1,0 +1,2 @@
+# fscorex
+Papan Skor Sederhana
