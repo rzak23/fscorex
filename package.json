@@ -1,0 +1,31 @@
+{
+  "name": "fscorex",
+  "version": "1.0.0",
+  "description": "Papan Skor Sederhana",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "electron": "^13.0.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzak23/fscorex.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "rzak23",
+    "email": "rzak@restdx.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rzak23/fscorex/issues"
+  },
+  "homepage": "https://github.com/rzak23/fscorex#readme"
+}
