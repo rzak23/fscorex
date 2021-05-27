@@ -13,6 +13,12 @@
 </head>
 <body>
     <div class="container mt-5">
+        <div class="text-center mb-3">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#about">
+                <i class="fas fa-exclamation"></i>
+                <span>Tentang</span>
+            </button>
+        </div>
         <div id="firstForm">
             <div class="card card-body">
                 <div class="form-group">
@@ -80,6 +86,35 @@
                 </div>
             </div>
         </div>
+
+        <!-- About -->
+        <div class="modal fade" role="dialog" id="about">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Tentang Program
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center mb-2">
+                            <p>For Support</p>
+                            <img src="img/qr-support.png" alt="">
+                        </div>
+                        <div>
+                            <span id="author"></span><br>
+                            <span id="contact"></span><br>
+                            <span id="versi"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            <span>Tutup</span>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
     </div>
     
     <!-- Jquery -->
@@ -89,6 +124,12 @@
     <script>
         $(document).ready(function(){
             $('#show-score').hide();
+        })
+
+        $.getJSON('./package.json',function(data){
+            document.getElementById('author').innerHTML = "Author : "+data.author.name;
+            document.getElementById('versi').innerHTML = "Versi : "+data.version;
+            document.getElementById('contact').innerHTML = "Email : "+data.author.email;
         })
 
         function save_tim(){
