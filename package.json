@@ -9,8 +9,8 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "electron-builder": "^22.10.5",
-    "electron": "^13.0.1"
+    "electron": "^13.5.1",
+    "electron-builder": "^22.10.5"
   },
   "scripts": {
     "start": "electron .",
