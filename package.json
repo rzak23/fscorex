@@ -14,8 +14,20 @@
   },
   "scripts": {
     "start": "electron .",
-    "win64": "electron-builder build --win --x64",
-    "win32": "electron-builder build --win --ia32"
+    "win": "electron-builder build --win --x64"
+  },
+  "build": {
+    "appId": "my.id.restudio.fscorex",
+    "productName": "FScoreX",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true
+    }
   },
   "repository": {
     "type": "git",
@@ -24,7 +36,7 @@
   "keywords": [],
   "author": {
     "name": "rzak23",
-    "email": "rzak@restdx.com"
+    "wa": "+62851-5720-2788"
   },
   "license": "ISC",
   "bugs": {

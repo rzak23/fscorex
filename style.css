@@ -1,3 +1,18 @@
+body{
+    background-color: #3F3351;
+}
 .font-tim{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+}
+.font-timer{
+    font-family: 'Righteous', cursive;
+    font-size: 8em;
+}
+.card{
+    background-color: #1F1D36!important;
+}
+.bt-info{
+    background-color: #864879;
+    color: #FFFFFF;
 }
