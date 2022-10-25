@@ -112,7 +112,6 @@
                         <div>
                             <span id="author"></span><br>
                             <span id="versi"></span><br>
-                            <span id="wa"></span>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -139,7 +138,6 @@
         $.getJSON('./package.json',function(data){
             document.getElementById('author').innerHTML = "Author : "+data.author.name;
             document.getElementById('versi').innerHTML = "Versi : "+data.version;
-            document.getElementById('wa').innerHTML = "Whatsapp : "+data.author.wa;
         })
 
         function save_tim(){
