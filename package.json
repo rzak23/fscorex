@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "electron .",
-    "win": "electron-builder build --win --x64"
+    "win": "electron-builder build --win --x64",
+    "linx": "electron-builder build --linux --x64"
   },
   "build": {
     "appId": "my.id.restudio.fscorex",
@@ -24,6 +25,14 @@
         "nsis"
       ],
       "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": [
+        "appimage",
+        "snap"
+      ],
+      "icon": "build/256x256.png",
+      "category": "Utilities"
     },
     "nsis": {
       "oneClick": true
@@ -35,8 +44,8 @@
   },
   "keywords": [],
   "author": {
-    "name": "rzak23",
-    "wa": "+62851-5720-2788"
+    "name": "Re.Studio",
+    "email": "restudio.devkun@gmail.com"
   },
   "license": "ISC",
   "bugs": {
