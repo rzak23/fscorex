@@ -7,6 +7,11 @@ function createWindow () {
     width: 1200,
     height: 800,
     icon: __dirname+'./build/icon.png',
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#1F1D36',
+      symbolColor: '#74b1be'
+    },
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -14,7 +19,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-  // mainWindow.removeMenu();
+  mainWindow.removeMenu();
 }
 
 app.setAppUserModelId("FScoreX")
