@@ -7,7 +7,7 @@ function createWindow () {
     width: 1200,
     height: 800,
     icon: __dirname+'./build/icon.png',
-    titleBarStyle: 'hidden',
+    // titleBarStyle: 'hidden',
     titleBarOverlay: {
       color: '#1F1D36',
       symbolColor: '#74b1be'
@@ -18,8 +18,8 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
-  mainWindow.removeMenu();
+  mainWindow.loadFile('pages/index.html')
+  // mainWindow.removeMenu();
 }
 
 app.setAppUserModelId("FScoreX")

@@ -1,0 +1,74 @@
+@@include('partials/html-open.html')
+@@include('partials/head.html')
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Setup</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="form-setup">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <div class="mb-3">
+                                        <label for="tim-a">Nama Tim A</label>
+                                        <input type="text" name="tim-a" class="form-control" id="tim-a" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="mb-3">
+                                        <label for="tim-b">Nama Tim B</label>
+                                        <input type="text" name="tim-b" class="form-control" id="tim-b" autocomplete="off" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-12">
+                                    <div class="mb-3">
+                                        <label for="wasit">Nama Wasit</label>
+                                        <input type="text" name="wasit" class="form-control" id="wasit" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="mb-3">
+                                        <label for="garis-a">Nama Asisten Wasit 1</label>
+                                        <input type="text" name="garis-a" class="form-control" id="garis-a" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="mb-3">
+                                        <label for="garis-b">Nama Asisten Wasit 2</label>
+                                        <input type="text" name="garis-b" class="form-control" id="garis-b" autocomplete="off" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <div class="mb-3">
+                                        <label for="timer">Waktu Pertandingan (menit)</label>
+                                        <input type="number" name="timer" class="form-control" id="timer" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="mb-3">
+                                        <label for="babak">Jumlah Babak</label>
+                                        <input type="number" name="babak" class="form-control" id="babak" autocomplete="off" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <button type="button" class="btn btn-sm btn-success">
+                                    <span>Simpan</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+@@include('partials/script.html')
+@@include('partials/html-close.html')

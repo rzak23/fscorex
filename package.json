@@ -10,12 +10,16 @@
   },
   "devDependencies": {
     "electron": "^32.1.2",
-    "electron-builder": "^25.1.7"
+    "electron-builder": "^25.1.7",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-file-include": "^2.3.0"
   },
   "scripts": {
     "start": "electron .",
     "win": "electron-builder build --win --x64",
-    "linx": "electron-builder build --linux --x64"
+    "linx": "electron-builder build --linux --x64",
+    "build-html": "gulp html"
   },
   "build": {
     "appId": "my.id.restudio.fscorex",
